@@ -1,14 +1,14 @@
 {
-  "name": "cordova-sqlite-storage-dependencies",
-  "version": "1.0.3",
-  "description": "Cordova sqlite storage dependencies",
+  "name": "cordova-sqlite-ext-deps",
+  "version": "0.4.0",
+  "description": "Cordova sqlite ext dependencies",
   "main": "404.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/litehelpers/Cordova-sqlite-storage-dependencies.git"
+    "url": "git+https://github.com/brodybits/cordova-sqlite-ext-deps.git"
   },
   "keywords": [
     "cordova",
@@ -18,7 +18,7 @@
   "author": "Christopher J. Brody",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/litehelpers/Cordova-sqlite-storage-dependencies/issues"
+    "url": "https://github.com/brodybits/cordova-sqlite-ext-deps/issues"
   },
-  "homepage": "https://github.com/litehelpers/Cordova-sqlite-storage-dependencies#readme"
+  "homepage": "https://github.com/brodybits/cordova-sqlite-ext-deps#readme"
 }
