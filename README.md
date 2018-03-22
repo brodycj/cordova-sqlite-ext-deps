@@ -13,10 +13,11 @@ Contains source and object code built from:
 - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) (Unlicense, public domain)
 
 This project provides the following dependencies needed to build [litehelpers / Cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage):
-- `sqlite3.h`, `sqlite3.c` - SQLite `3.15.2` amalgamation needed to build iOS/macOS and Windows platform versions
+- `sqlite3.h`, `sqlite3.c` - SQLite `3.22.0` amalgamation needed to build iOS/macOS and Windows platform versions
 - [libb64-encode](https://github.com/brodybits/libb64-encode), [sqlite3-base64](https://github.com/brodybits/sqlite3-base64), and [sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached) source for iOS/macOS/Windows platform versions
-- `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.15.2` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
-  - `-DSQLITE_THREADSAFE=2`
+- `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.22.0` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
+  - `-DSQLITE_THREADSAFE=1`
+  - `-DSQLITE_DEFAULT_SYNCHRONOUS=3`
   - `-DSQLITE_DEFAULT_MEMSTATUS=0`
   - `-DSQLITE_OMIT_DECLTYPE`
   - `-DSQLITE_OMIT_DEPRECATED`
