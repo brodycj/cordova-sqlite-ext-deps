@@ -2,10 +2,11 @@
 
 **AUTHOR:** Christopher J. Brody
 
-**LICENSE:** [Unlicense (unlicense.org)](http://unlicense.org/) (public domain)
+**LICENSE:** MIT for `sql-memory-growth.js` ([kripken / sql.js](https://github.com/kripken/sql.js)); [Unlicense (unlicense.org)](http://unlicense.org/) (public domain); other public domain license
 
 Contains source and object code built from:
 - SQLite3 from [sqlite.org](http://sqlite.org/) (public domain)
+- [kripken / sql.js](https://github.com/kripken/sql.js) (MIT license)
 - [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached) (based on <http://git.altlinux.org/people/at/packages/?p=sqlite3-pcre.git> by Alexey Tourbin, public domain)
 - [brodybits / sqlite3-base64](https://github.com/brodybits/sqlite3-base64) (Unlicense, public domain)
 - [brodybits / libb64-encode](https://github.com/brodybits/libb64-encode) (based on <http://libb64.sourceforge.net/> by Chris Venter, public domain)
@@ -15,6 +16,7 @@ Contains source and object code built from:
 This project provides the following dependencies needed to build [litehelpers / Cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage):
 - `sqlite3.h`, `sqlite3.c` - SQLite `3.22.0` amalgamation needed to build iOS/macOS and Windows platform versions
 - [libb64-encode](https://github.com/brodybits/libb64-encode), [sqlite3-base64](https://github.com/brodybits/sqlite3-base64), and [sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached) source for iOS/macOS/Windows platform versions
+- `sql-memory-growth.js` - version of [kripken / sql.js](https://github.com/kripken/sql.js) (SQLite `3.22.0`) for `browser` platform, including solution for "cannot enlarge memory arrays" issue, downloaded from <https://raw.githubusercontent.com/kripken/sql.js/master/js/sql-memory-growth.js>, with FTS3 included (no FTS4, FTS5, R-Tree, JSON1, REGEXP, or BASE64 support)
 - `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.22.0` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
   - `-DSQLITE_THREADSAFE=1`
   - `-DSQLITE_DEFAULT_SYNCHRONOUS=3`
