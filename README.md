@@ -13,9 +13,9 @@ Contains source and object code built from:
 - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) (Unlicense, public domain)
 
 This project provides the following dependencies needed to build [litehelpers / Cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage):
-- `sqlite3.h`, `sqlite3.c` - SQLite `3.28.0` amalgamation needed to build iOS/macOS and Windows platform versions
+- `sqlite3.h`, `sqlite3.c` - SQLite `3.30.1` amalgamation needed to build iOS/macOS and Windows platform versions
 - [libb64-encode](https://github.com/brodybits/libb64-encode), [sqlite3-base64](https://github.com/brodybits/sqlite3-base64), and [sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached) source for iOS/macOS/Windows platform versions
-- `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.26.0` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
+- `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.30.1` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
   - `-DSQLITE_THREADSAFE=1`
   - `-DSQLITE_DEFAULT_SYNCHRONOUS=3`
   - `-DSQLITE_DEFAULT_MEMSTATUS=0`
@@ -31,5 +31,5 @@ This project provides the following dependencies needed to build [litehelpers / 
   - `-DSQLITE_ENABLE_FTS5`
   - `-DSQLITE_ENABLE_RTREE`
   - `-DSQLITE_ENABLE_JSON1`
-  - `-DSQLITE_DEFAULT_PAGE_SIZE=1024`
-  - `-DSQLITE_DEFAULT_CACHE_SIZE=2000`
+  - `-DSQLITE_DEFAULT_PAGE_SIZE=4096`
+  - `-DSQLITE_DEFAULT_CACHE_SIZE=-2000`
