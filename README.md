@@ -15,7 +15,7 @@ Contains source and object code built from:
 This project provides the following dependencies needed to build [cordova-sqlite-ext](https://github.com/brodybits/cordova-sqlite-ext):
 - `sqlite3.h`, `sqlite3.c` - SQLite `3.32.3` amalgamation needed to build iOS/macOS and Windows platform versions
 - [libb64-core](https://github.com/brodybits/libb64-core), [sqlite3-base64](https://github.com/brodybits/sqlite3-base64), and [sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached) source for iOS/macOS/Windows platform versions
-- `libs` - [liteglue / Android-sqlite-connector](https://github.com/liteglue/Android-sqlite-connector) and [brodybits / Android-sqlite-ext-native-driver](https://github.com/brodybits/Android-sqlite-ext-native-driver) library JARs built with SQLite `3.32.3` amalgamation, using [brodybits / sqlite3-regexp-cached](https://github.com/brodybits/sqlite3-regexp-cached), with the following flags:
+- `libs` - JAR libraries built from [`brodybits/android-sqlite-ndk-native-driver`](https://github.com/brodybits/android-sqlite-ndk-native-driver) and [`brodybits/android-sqlite-native-ndk-connector`](https://github.com/brodybits/android-sqlite-native-ndk-connector), built with SQLite `3.32.3` amalgamation, with the following flags:
   - `-DSQLITE_THREADSAFE=1`
   - `-DSQLITE_DEFAULT_SYNCHRONOUS=3`
   - `-DSQLITE_DEFAULT_MEMSTATUS=0`
