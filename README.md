@@ -1,3 +1,10 @@
+# WARNING TEST PLUGIN
+
+This plugin is forked from https://github.com/brodycj/cordova-sqlite-ext-deps, and only provided to test the compilation of new Libs for Android 15 16Kb Page Size.
+
+
+
+
 # Cordova sqlite ext dependencies
 
 **AUTHOR:** Christopher J. Brody
